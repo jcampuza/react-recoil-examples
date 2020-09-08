@@ -24,7 +24,8 @@ export const RootStyles = createGlobalStyle`
 
   code, pre {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-    white-space: pre-line;
+    font-size: 12px;
+    color: ${(props) => props.theme.text};
   }
 
   h1, h2, h3, h4, h5, h6, p, li, ul {

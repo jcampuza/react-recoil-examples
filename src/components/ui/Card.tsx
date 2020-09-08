@@ -7,7 +7,7 @@ export const Card = styled.div<{ selected?: boolean }>`
   padding: 1rem;
   outline: none;
   transition: border-color 200ms ease-out;
-  cursor: pointer;
+  cursor: ${(props) => (props.onClick ? 'pointer' : 'initial')};
 
   &:hover {
     border: 1px solid ${(props) => props.theme.secondary};

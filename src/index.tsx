@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './components/App';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
-import { stateInitializer } from './state/stateInitializer';
+import { App } from './components/App';
 import { PersistenceObserver } from './components/PersistenceObserver';
+import { stateInitializer } from './state/stateInitializer';
 
 ReactDOM.render(
   <React.StrictMode>
     <RecoilRoot initializeState={stateInitializer}>
-      <App />
-      <PersistenceObserver />
+      <Router>
+        <App />
+        <PersistenceObserver />
+      </Router>
     </RecoilRoot>
   </React.StrictMode>,
   document.getElementById('root')
