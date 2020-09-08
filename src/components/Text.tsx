@@ -44,7 +44,7 @@ const bodyTextStyles = css`
 
 const subtitleTextStyles = css`
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 300;
 `;
 
 const titleTextStyles = css`

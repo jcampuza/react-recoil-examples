@@ -14,9 +14,9 @@ declare module 'styled-components' {
 }
 
 const darkTheme: DefaultTheme = {
-  primary: '#520052',
-  secondary: 'orange',
-  background: '#18191b',
+  primary: '#0311cc',
+  secondary: '#00a9b1',
+  background: '#191a1b',
   text: 'white',
   textInvert: '#222',
   white: '#fff',

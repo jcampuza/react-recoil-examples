@@ -31,4 +31,43 @@ export const RootStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  input {
+    border-radius: 3px;
+    border: 1px solid #333;
+    padding: 0.5rem 0.5rem;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2px;
+    background-color: ${(props) => props.theme.primary};
+    color: ${(props) => props.theme.white};
+    min-width: 80px;
+    cursor: pointer;
+
+    + button {
+      margin-left: 1rem;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  hr {
+    border-color: ${(props) => props.theme.text};
+    margin: 1rem 0 ;
+  }
 `;

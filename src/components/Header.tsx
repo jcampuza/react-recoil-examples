@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
-import { themeAtom } from '../util/theme';
+import { themeAtom } from '../state/theme';
 import { Text } from './Text';
 import { Toggle } from './Toggle';
 

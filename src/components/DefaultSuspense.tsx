@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text } from './Text';
+import { Spinner } from './Spinner';
 
 export const DefaultSuspense: React.FC = ({ children }) => {
-  return <React.Suspense fallback={<Text>Loading</Text>}>{children}</React.Suspense>;
+  return <React.Suspense fallback={<Spinner />}>{children}</React.Suspense>;
 };

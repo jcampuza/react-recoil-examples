@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { ThemeProvider } from 'styled-components';
-import { themeObjectSelector } from '../util/theme';
+import { themeObjectSelector } from '../state/theme';
 
 export const AppTheme: React.FC = (props) => {
   const theme = useRecoilValue(themeObjectSelector);
