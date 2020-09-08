@@ -6,9 +6,9 @@ import { Demo3 } from '../demo/demo-3';
 import { Demo4 } from '../demo/demo-4';
 import { Demo5 } from '../demo/demo-5';
 import { Demo6 } from '../demo/demo-6';
-import { Shell } from './Shell';
-import { Stack } from './Stack';
-import { Text } from './Text';
+import { Shell } from './AppShell';
+import { Stack } from './ui/Stack';
+import { Text } from './ui/Text';
 
 const slides = [Demo1, Demo2, Demo3, Demo4, Demo5, Demo6];
 

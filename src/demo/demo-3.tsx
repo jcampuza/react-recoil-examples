@@ -1,9 +1,9 @@
 import React from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { Card } from '../components/Card';
-import { Grid, GridItem } from '../components/Grid';
-import { Stack } from '../components/Stack';
-import { Text } from '../components/Text';
+import { Card } from '../components/ui/Card';
+import { Grid, GridItem } from '../components/ui/Grid';
+import { Stack } from '../components/ui/Stack';
+import { Text } from '../components/ui/Text';
 import { searchedUsers, userSearch } from '../state/user';
 
 export const UserQuery = () => {

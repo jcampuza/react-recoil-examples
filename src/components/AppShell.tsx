@@ -1,21 +1,21 @@
 import React from 'react';
 import { AppTheme } from './AppTheme';
-import { Container } from './Container';
-import { DefaultErrorBoundary } from './DefaultErrorBoundary';
-import { DefaultSuspense } from './DefaultSuspense';
+import { Container } from './ui/Container';
+import { SimpleErrorBoundary } from './SimpleErrorBoundary';
+import { SimpleSuspense } from './SimpleSuspense';
 import { RootStyles } from './GlobalStyles';
-import { AppHeader } from './Header';
+import { AppHeader } from './AppHeader';
 
 export const Shell: React.FC = ({ children }) => {
   return (
-    <DefaultSuspense>
-      <DefaultErrorBoundary>
+    <SimpleSuspense>
+      <SimpleErrorBoundary>
         <AppTheme>
           <RootStyles></RootStyles>
           <AppHeader />
           <Container>{children}</Container>
         </AppTheme>
-      </DefaultErrorBoundary>
-    </DefaultSuspense>
+      </SimpleErrorBoundary>
+    </SimpleSuspense>
   );
 };

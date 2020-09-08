@@ -2,8 +2,8 @@ import React from 'react';
 import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
 import { themeAtom } from '../state/theme';
-import { Text } from './Text';
-import { Toggle } from './Toggle';
+import { Text } from './ui/Text';
+import { Toggle } from './ui/Toggle';
 
 export const AppHeader: React.FC = () => {
   const [theme, setTheme] = useRecoilState(themeAtom);

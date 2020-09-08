@@ -1,7 +1,7 @@
 import React from 'react';
 import { atom, useRecoilState, useRecoilValue } from 'recoil';
-import { Stack } from '../components/Stack';
-import { Text } from '../components/Text';
+import { Stack } from '../components/ui/Stack';
+import { Text } from '../components/ui/Text';
 
 export const stateAtom = atom({
   key: 'state',

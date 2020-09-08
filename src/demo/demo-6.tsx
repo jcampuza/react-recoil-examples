@@ -1,10 +1,10 @@
 import React from 'react';
 import { useRecoilState, useRecoilValue, useRecoilValueLoadable } from 'recoil';
-import { Card } from '../components/Card';
-import { Grid, GridItem } from '../components/Grid';
-import { Spinner } from '../components/Spinner';
-import { Stack } from '../components/Stack';
-import { Text } from '../components/Text';
+import { Card } from '../components/ui/Card';
+import { Grid, GridItem } from '../components/ui/Grid';
+import { Spinner } from '../components/ui/Spinner';
+import { Stack } from '../components/ui/Stack';
+import { Text } from '../components/ui/Text';
 import { searchedUsers, selectedUserIdAtom, selectedUserPosts, userSearch } from '../state/user';
 
 export const Component = () => {

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import styled, { css } from 'styled-components';
-import { useFocus } from '../util/useFocus';
+import { useFocus } from '../../util/useFocus';
 import { VisuallyHidden } from './VisuallyHidden';
 
 interface ToggleProps {

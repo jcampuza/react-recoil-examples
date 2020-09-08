@@ -1,11 +1,11 @@
 import React from 'react';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { Card } from '../components/Card';
-import { DefaultErrorBoundary } from '../components/DefaultErrorBoundary';
-import { DefaultSuspense } from '../components/DefaultSuspense';
-import { Grid, GridItem } from '../components/Grid';
-import { Stack } from '../components/Stack';
-import { Text } from '../components/Text';
+import { Card } from '../components/ui/Card';
+import { SimpleErrorBoundary } from '../components/SimpleErrorBoundary';
+import { SimpleSuspense } from '../components/SimpleSuspense';
+import { Grid, GridItem } from '../components/ui/Grid';
+import { Stack } from '../components/ui/Stack';
+import { Text } from '../components/ui/Text';
 import { searchedUsers, selectedUserIdAtom, selectedUserPosts, userSearch } from '../state/user';
 
 export const UserQuery = () => {
@@ -112,19 +112,19 @@ export const Demo5 = () => {
           <UserQuery />
         </GridItem>
         <GridItem span={2}>
-          <DefaultSuspense>
-            <DefaultErrorBoundary>
+          <SimpleSuspense>
+            <SimpleErrorBoundary>
               <QueriedUsers />
-            </DefaultErrorBoundary>
-          </DefaultSuspense>
+            </SimpleErrorBoundary>
+          </SimpleSuspense>
         </GridItem>
       </Grid>
 
       {selectedUserId ? (
         <GridItem>
-          <DefaultSuspense>
+          <SimpleSuspense>
             <SelectedUserPosts userId={selectedUserId} />
-          </DefaultSuspense>
+          </SimpleSuspense>
         </GridItem>
       ) : null}
     </Stack>

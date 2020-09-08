@@ -1,6 +1,6 @@
 import React from 'react';
-import { Spinner } from './Spinner';
+import { Spinner } from './ui/Spinner';
 
-export const DefaultSuspense: React.FC = ({ children }) => {
+export const SimpleSuspense: React.FC = ({ children }) => {
   return <React.Suspense fallback={<Spinner />}>{children}</React.Suspense>;
 };

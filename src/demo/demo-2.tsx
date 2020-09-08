@@ -1,8 +1,8 @@
 import React from 'react';
 import { atom, DefaultValue, selector, useRecoilState } from 'recoil';
-import { Grid, GridItem } from '../components/Grid';
-import { Stack } from '../components/Stack';
-import { Text } from '../components/Text';
+import { Grid, GridItem } from '../components/ui/Grid';
+import { Stack } from '../components/ui/Stack';
+import { Text } from '../components/ui/Text';
 
 export const count = atom({
   key: 'count',
